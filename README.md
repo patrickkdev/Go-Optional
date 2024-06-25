@@ -14,7 +14,7 @@ The `optional` package provides a generic `Optional` type for Go, which represen
 To install the package, run:
 
 ```sh
-go get example.com/optional
+go get github.com/patrickkdev/Go-Optional
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ go get example.com/optional
 ### Importing the Package
 
 ```go
-import "example.com/optional"
+import "github.com/patrickkdev/Go-Optional"
 ```
 
 ### Creating an Optional Value
@@ -32,7 +32,7 @@ package main
 
 import (
     "fmt"
-    "example.com/optional"
+    "github.com/patrickkdev/Go-Optional"
 )
 
 func main() {
@@ -68,7 +68,7 @@ package main
 
 import (
     "fmt"
-    "example.com/optional"
+    "github.com/patrickkdev/Go-Optional"
 )
 
 func main() {
