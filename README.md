@@ -1,6 +1,3 @@
-Sure! Here's a `README.md` file for the `optional` package:
-
-```markdown
 # Optional Package for Go
 
 The `optional` package provides a generic `Optional` type for Go, which represents a value that may or may not be present. This can be useful for handling optional values in a type-safe way.
@@ -92,27 +89,32 @@ func main() {
 #### Methods
 
 - **`New`**: Creates a new `Optional` containing the given value.
-  ```go
+
+```go
   func New[T any](value T) Optional[T]
   ```
 
 - **`Empty`**: Creates a new empty `Optional`.
-  ```go
+
+```go
   func Empty[T any]() Optional[T]
   ```
 
 - **`IsPresent`**: Returns true if the `Optional` contains a value.
-  ```go
+
+```go
   func (opt Optional[T]) IsPresent() bool
   ```
 
 - **`Get`**: Returns the value if present, or an error if not.
-  ```go
+
+```go
   func (opt Optional[T]) Get() (T, error)
   ```
 
 - **`OrElse`**: Returns the value if present, or the provided default value if not.
-  ```go
+
+```go
   func (opt Optional[T]) OrElse(defaultValue T) T
   ```
 
@@ -127,14 +129,3 @@ go test ./...
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
----
-
-Happy coding!
-```
-
-This `README.md` file provides an overview of the `optional` package, including installation instructions, usage examples, API documentation, and information on testing and contributing.
